@@ -1,0 +1,21 @@
+package oops
+
+class Animal {
+	/*
+	 * process where one class acquires properties (methods and fields)
+	 * from another class
+	 * parentClass superClass baseClass 
+	 * childClass subClass derivedClass
+	 */
+	
+	String name 
+	String breed
+	
+	def eats() {
+		println "$name eats"
+	}
+	
+	def moves() {
+		println "$name moves"
+	}
+}
