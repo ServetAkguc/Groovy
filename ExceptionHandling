@@ -1,0 +1,20 @@
+package com.test.demo
+
+import org.apache.groovy.parser.antlr4.GroovyParser.FinallyBlockContext
+
+//Exception Handling 
+// it does not stop the execution it continue we handle the exception
+try {
+	def i =1/0
+} catch(ArithmeticException ae) {
+	println ae.getMessage()
+}catch (Exception e) {
+//	e.printStackTrace()
+	println "I am inside exception block"
+	println e.getCause()
+	println e.getMessage()
+}
+finally{
+	println "I AM INSIDE THE FINALLY BLOCK"
+}
+println "Another set of code"
