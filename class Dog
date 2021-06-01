@@ -1,0 +1,13 @@
+package oops
+
+class Dog extends Animal{
+	
+	def dogName
+	def plays() {
+		println "$dogName likes to play"
+	}
+	
+	def eats() {
+		println "$dogName likes to eat"
+	}
+}
