@@ -1,0 +1,13 @@
+package com.test.demo
+
+// groovy is dynamically type
+def _name = "Servet"
+println 'Name is ${_name}'//single quote take everything literally
+println "Name is ${_name}"// double qoute will take referable
+
+_name =15
+println _name
+def x = 10
+def X = 20
+println x
+println X
