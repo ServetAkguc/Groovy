@@ -1,0 +1,17 @@
+package com.test.demo
+
+byte b = 10
+println b
+short s = 100
+println s
+int i = 1000
+println i 
+long l = 100000
+float f = 100.002f
+println f
+char c = 'A'
+println c
+boolean flag = true
+println flag
+String str = "Groovy"
+println str
