@@ -1,0 +1,15 @@
+package com.test.demo
+
+
+	/*
+	 * this is groovy program
+	 * we do not have to have a class in groovy
+	 */
+	static void main(args) {
+		println 'Hello World...!'
+	}
+	/*
+	 * How to define variables
+	 * How to name variables
+	 * Multiple assignment
+	 */
