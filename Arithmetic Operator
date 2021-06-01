@@ -1,0 +1,125 @@
+package com.test.demo
+
+//Arithmetic Operators
+assert 1+2 == 3
+assert 4-3 == 1
+assert 3*5 == 15
+assert 3/2 == 1.5
+assert 10%3 == 1
+assert 2**3 == 8
+assert 9.intdiv(5) ==1
+assert 2.2.plus()== 2.2
+
+//Unary Operators
+assert +3 ==3
+assert -4 ==0-4
+assert -(-1) == 1
+
+//Increment ++ & Decrement --
+int i = 10
+println (++i)
+println i++
+println i
+
+def a = 2
+def b = a++ * 3             
+assert a == 3 && b == 6
+
+def c = 3
+def d = c-- * 2             
+assert c == 2 && d == 6
+
+def e = 1
+def f = ++e + 3             
+assert e == 2 && f == 5
+
+def g = 4
+def h = --g + 1             
+assert g == 3 && h == 4
+
+
+//Assignment arithmetic operators
+def x = 4
+x+=3 //x= x+3
+assert x ==7
+
+def j = 4
+j += 3
+assert j == 7
+
+def k = 5
+k -= 3
+assert k == 2
+
+def l = 5
+l *= 3
+assert l == 15
+
+def n = 10
+n /= 2
+assert n == 5
+
+def o = 10
+o %= 3
+assert o == 1
+
+def p = 3
+p **= 2
+assert p == 9
+
+//Relational Operators 
+assert 1 + 2 == 3
+assert 3 != 4
+assert -2 < 3
+assert 2 <= 2
+assert 3 <= 4
+assert 5 > 1
+assert 5 >= -2
+
+//Logical Operators
+assert !false // ! not value
+assert true && true //&& both sides should be true
+assert true || false // one of them should be true
+
+assert (!false && false) == false
+//and has a higher priority oncelik hakki var
+assert true || true && false 
+
+/*
+ *  Bitwise operators
+ *  
+ &: bitwise "and"
+
+|: bitwise "or"
+
+^: bitwise "xor" (exclusive "or")
+
+~: bitwise negation
+ *  
+ *  
+ */
+
+int a1 = 0b00101010
+assert a1 == 42
+int b1 = 0b00001000
+assert b1 == 8
+assert (a1 & a1) == a1
+assert (a1 & b1) == b1
+assert (a1 | a1) == a1
+assert (a1 | b1) == a1
+
+int mask = 0b11111111
+assert ((a1 ^ a1) & mask) == 0b00000000
+assert ((a1 ^ b1) & mask) == 0b00100010
+assert ((~a1) & mask)    == 0b11010101
+
+
+
+
+
+
+
+
+
+
+
