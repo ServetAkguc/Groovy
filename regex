@@ -1,0 +1,6 @@
+package com.test.demo
+
+//regex - patterns used to find substrings in a text
+//~"expression"
+
+println "Groovy"=~ "Groovy"
