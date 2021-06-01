@@ -1,0 +1,27 @@
+package com.test.demo
+
+/*
+ * Methods block of code
+ * make reusable code
+ * have a return type
+ * 
+ */
+def methodName() {
+	println "Hello"
+}
+
+methodName()
+
+def sum (int a, int b) {
+println "Sum is "+(a+b)	
+}
+
+sum(5,6)
+
+def subtraction (int a, int b) {
+	def c = a-b
+	return c
+	}
+	
+	def result = subtraction(5, 2)
+	println "Result of Subtraction is "+ result
