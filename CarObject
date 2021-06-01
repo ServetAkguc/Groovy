@@ -1,0 +1,36 @@
+package oops
+
+class CarObject {
+
+	static void main(args) {
+
+		Cars toyota = new Cars()
+		Cars ford = new Cars()
+		Cars mercedes = new Cars()
+
+		toyota.name = "Toyota"
+		toyota.model = 2019
+		toyota.color = "Red"
+
+		ford.name = "Ford"
+		ford.model = 2018
+		ford.color = "White"
+
+		mercedes.name = "Mercedes"
+		mercedes.model = 2017
+		mercedes.color = "Blue"
+
+		toyota.getCarDetails()
+		toyota.startingEngine()
+
+		println "======================"
+
+		ford.getCarDetails()
+		ford.startingEngine()
+
+		println "======================"
+
+		mercedes.getCarDetails()
+		mercedes.startingEngine()
+	}
+}
