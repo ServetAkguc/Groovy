@@ -1,0 +1,30 @@
+package com.test.demo
+
+/*
+ *  InputOutput {
+ *  
+ */
+//print "Enter your name : "
+//def name = System.console().readLine()
+//
+//println "Hello $name"
+//
+//print "Enter first number : "
+//def number = System.console().readLine().toInteger()
+//print "Enter second number : "
+//def number2 = System.console().readLine().toInteger()
+//println "$number + $number2 = " + (number+number2)
+
+//Output
+//print//print same line
+//println //print the statement and move to the second line
+//printf//print same line if you put \n it will move to the next line 
+
+def myName = "Servet"
+
+println "May name is $myName"
+printf "May name is %s \n", myName
+
+printf "%s | %s | %d | %.2f \n",["Servet","Groovy", 10,20.203]
+
+printf "%s-10s | %10s | %d | %.2f \n",["Servet","Groovy",10,20.203]
