@@ -1,0 +1,49 @@
+package com.test.demo
+
+/* Closure block of code take parameters
+ * refer variables
+ * return value
+ * can be passed as parameter in method
+ * 
+ * with closure we do not have to create an object of
+ * the class
+ *
+ */
+
+def str = "Hello"
+
+def myClosure1 = {name -> println "$str ${name}"}
+
+myClosure1.call("Servet")
+
+def myMethod(close) {
+	close.call("Groovy")
+}
+
+myMethod(myClosure1)
+
+
+def myclosure2 = {
+	a,b,c -> 
+	return (a+b+c)
+}
+
+def result = myclosure2(10,20,30)
+println result
+
+
+def myList1 = ["Apples", "Orange", "Grapes"]
+println (myList1.each { it })
+
+def myMap = ['subject' : 'groovy',
+			'topic' : 'closure']
+println myMap.each{ it }
+
+def myList =[1,2,3,4,5]
+
+println myList.findAll { item -> item == 3 }
+println myList.findAll{ item -> item >3 }
+println myList.any{ item -> item >5 }
+println myList.every{ item -> item >3 }
+println myList.collect{ item -> item *2 }
+
