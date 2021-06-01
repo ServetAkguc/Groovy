@@ -1,0 +1,93 @@
+package com.test.demo
+
+/*
+ * Strings 
+ * dingle quoted '.......'
+ * double quoted "....."
+ * triple single quoted '''....'''
+ * triple double quoted ''''''....''''''
+ * slashy /.../
+ * dollar slashy $/.../$
+ */
+String name1 = "Serve"
+def name = "Servet" // this is dynamic typing
+println name
+println "My name is "+name
+println "My name is ".concat(name)
+println "My name is ${name}"//it is interpolition
+println 'My name is ${name}'// it is printing as it is in a single quote we cannot call refer
+
+def s1 ="""This is Groovy class 
+and we are learning Strings""" // when we want to use multiple line we can use single triple quotes or double triple quotes
+printf s1
+println ""
+println name.length();
+println name[2]
+println name[-1]
+println name.indexOf('e')
+println name[0..2]
+println name[5..3]
+println name[0,2,5]
+println name.substring(2)
+println name.subSequence(1, 4)
+
+def str = "This is a Groovy class"
+println str.split(" ")// this is created a list
+println str-("Groovy")
+println str.replace("class", "session")
+println str.toLowerCase()
+println str.toUpperCase()
+println str.toList()
+println "Groovy "*3
+println "ABC".equals("ABC")
+println "ABC".equals("Abc")
+println "ABC".equalsIgnoreCase("Abc")
+
+def s2 = /a green sky ${name}/
+def s3 = $/a blue tree ${name}/$
+
+println s2
+println s3
+
+def s4 = "My name is \"Servet\""
+println s4
+def s5 = /My name is "Servet"/
+println s5
+
+def s6 =/This is Groovy class
+and we are learning Strings/
+println s6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
